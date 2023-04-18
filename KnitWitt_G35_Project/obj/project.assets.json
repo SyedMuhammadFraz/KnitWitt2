@@ -2231,11 +2231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Syed Fraz\\OneDrive\\Documents\\4th semester\\DBMS\\Final Project\\KnitWitt_G35_Project\\KnitWitt_G35_Project.csproj",
+      "projectUniqueName": "C:\\Users\\Syed Fraz\\OneDrive\\Documents\\4th semester\\DBMS\\Final Project\\GitLab Final Project\\KnitWitt_G35_Project\\KnitWitt_G35_Project.csproj",
       "projectName": "KnitWitt_G35_Project",
-      "projectPath": "C:\\Users\\Syed Fraz\\OneDrive\\Documents\\4th semester\\DBMS\\Final Project\\KnitWitt_G35_Project\\KnitWitt_G35_Project.csproj",
+      "projectPath": "C:\\Users\\Syed Fraz\\OneDrive\\Documents\\4th semester\\DBMS\\Final Project\\GitLab Final Project\\KnitWitt_G35_Project\\KnitWitt_G35_Project.csproj",
       "packagesPath": "C:\\Users\\Syed Fraz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Syed Fraz\\OneDrive\\Documents\\4th semester\\DBMS\\Final Project\\KnitWitt_G35_Project\\obj\\",
+      "outputPath": "C:\\Users\\Syed Fraz\\OneDrive\\Documents\\4th semester\\DBMS\\Final Project\\GitLab Final Project\\KnitWitt_G35_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Syed Fraz\\AppData\\Roaming\\NuGet\\NuGet.Config",
