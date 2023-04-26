@@ -13,7 +13,8 @@ const Create = () => {
 
   const history = useNavigate();
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();   
+  
     console.log("clciekd");
     axios
       .post("https://643f7cdd3dee5b763e1dc55e.mockapi.io/crud", {
