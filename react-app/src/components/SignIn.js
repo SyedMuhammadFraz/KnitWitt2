@@ -71,9 +71,12 @@ export default function SignInSide() {
   const NavigateToHome =()=>{
       navigate('/AppLayout');
   };
+<<<<<<< HEAD
   const NavigateToRegistration =()=>{
       navigate('/SignUp');
   };
+=======
+>>>>>>> main
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
@@ -139,7 +142,11 @@ export default function SignInSide() {
                 </Link>
               </Grid>
               <Grid item>
+<<<<<<< HEAD
                 <Link href="#" variant="body2" onClick={NavigateToRegistration}>
+=======
+                <Link href="#" variant="body2">
+>>>>>>> main
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

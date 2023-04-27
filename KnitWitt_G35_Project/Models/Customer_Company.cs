@@ -3,7 +3,12 @@
     public class Customer_Company
     {
         public int Id { get; set; }
+<<<<<<< HEAD
         public string? Company_Name { get; set; }
         public string? Contact { get; set; }
+=======
+        public string Company_Name { get; set; }
+        public string Contact { get; set; }
+>>>>>>> main
     }
 }

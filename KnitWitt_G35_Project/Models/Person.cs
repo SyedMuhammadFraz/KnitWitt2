@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 
@@ -18,5 +19,11 @@ namespace KnitWitt_G35_Project.Models
         public string? Contact { get; set; }
         public DateTime DOB { get; set; }
         public string? CNIC { get; set; }
+=======
+﻿namespace KnitWitt_G35_Project.Models
+{
+    public class Person
+    {
+>>>>>>> main
     }
 }

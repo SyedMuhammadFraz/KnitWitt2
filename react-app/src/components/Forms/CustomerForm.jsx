@@ -18,6 +18,12 @@ import Blank from '../../Pages/Blank';
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> main
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -55,7 +61,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+<<<<<<< HEAD
 export default function CustomerForm() {
+=======
+export default function SignInSide() {
+>>>>>>> main
   const classes = useStyles();
   const navigate=useNavigate();
 
