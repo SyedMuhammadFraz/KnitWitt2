@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
+// Manager_Id
+// Warehouse_Id
+// Warehouse_Location
+// Warehouse_Name
+
 const Read = () => {
   const [data, setData] = useState([]);
   const [tabledark, setTableDark] = useState("");
@@ -18,14 +24,11 @@ const Read = () => {
         getData();
       });
   }
-  const setToLocalStorage = (id,name,lastname,email,contact,gender,selectedDate) => {
+
+  const setToLocalStorage = (id,Warehouse_Name,Warehouse_Location) => {
     localStorage.setItem("id", id);
-    localStorage.setItem("fname", name);
-    localStorage.setItem("email", email);
-    localStorage.setItem("lastname",lastname);
-    localStorage.setItem("gender",gender);
-    localStorage.setItem("contact",contact);
-    localStorage.setItem("selectedDate",selectedDate)
+    localStorage.setItem("Warehouse_Name", Warehouse_Name);
+    localStorage.setItem("Warehouse_Location",Warehouse_Location);
   };
   useEffect(() => {
     getData();
@@ -43,7 +46,7 @@ const Read = () => {
         />
       </div>
       <div className="d-flex justify-content-between m-2">
-        <h2>Read Operation</h2>
+        <h2>Read Warehouse Data</h2>
         <Link to="/">
           <button className="btn btn-secondary">Create</button>
         </Link>
@@ -52,14 +55,11 @@ const Read = () => {
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Contact</th>
-            <th scope="col">Gender</th>
-            <th scope="col">Date Of Birth </th>
+            <th scope="col">Warehouse_Name</th>
+            <th scope="col">Warehouse_Location</th>
             <th scope="col"> </th>
             <th scope="col"></th>
+
           </tr>
         </thead>
         {data.map((eachData) => {
@@ -68,12 +68,8 @@ const Read = () => {
               <tbody>
                 <tr>
                   <th scope="row">{eachData.id}</th>
-                  <td>{ eachData.name}</td>
-                  <td>{eachData.lastname}</td>
-                  <td>{eachData.email}</td>
-                  <td>{eachData.contact}</td>
-                  <td>{eachData.gender}</td>
-                  <td>{ eachData.selectedDate}</td>
+                  <td>{ eachData.Warehouse_Name}</td>
+                  <td>{eachData.Warehouse_Location}</td>
                   <td>
                     <Link to="/update">
                       <button
@@ -81,12 +77,8 @@ const Read = () => {
                         onClick={() =>
                           setToLocalStorage(
                             eachData.id,
-                            eachData.name,
-                            eachData.lastname,
-                            eachData.email,
-                            eachData.contact,
-                            eachData.gender,
-                            eachData.selectedDate
+                            eachData.Warehouse_Name,
+                            eachData.Warehouse_Location
                           )
                         }
                       >
