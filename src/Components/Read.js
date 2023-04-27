@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Select from 'react-select';
 
-// Manager_Id
-// Warehouse_Id
-// Warehouse_Location
-// Warehouse_Name
+
 
 const Read = () => {
   const [data, setData] = useState([]);
@@ -25,10 +23,11 @@ const Read = () => {
       });
   }
 
-  const setToLocalStorage = (id,Warehouse_Name,Warehouse_Location) => {
+  const setToLocalStorage = (id,Warehouse_Name,Warehouse_Location,selectedOption) => {
     localStorage.setItem("id", id);
     localStorage.setItem("Warehouse_Name", Warehouse_Name);
     localStorage.setItem("Warehouse_Location",Warehouse_Location);
+    localStorage.setItem("selectedOption", setSelectedOption);
   };
   useEffect(() => {
     getData();
@@ -50,15 +49,18 @@ const Read = () => {
         <Link to="/">
           <button className="btn btn-secondary">Create</button>
         </Link>
+        <br/>
+        <br/>
       </div>
       <table className={`table ${tabledark}`}>
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Warehouse_Name</th>
-            <th scope="col">Warehouse_Location</th>
-            <th scope="col"> </th>
-            <th scope="col"></th>
+            <th scope="col">Manager_id  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th scope="col">Warehouse_Name  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th scope="col">Warehouse_Location  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th scope="col"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+            <th scope="col">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
 
           </tr>
         </thead>
@@ -68,6 +70,7 @@ const Read = () => {
               <tbody>
                 <tr>
                   <th scope="row">{eachData.id}</th>
+                  <td>{ eachData.selectedOption}</td>
                   <td>{ eachData.Warehouse_Name}</td>
                   <td>{eachData.Warehouse_Location}</td>
                   <td>
@@ -77,6 +80,7 @@ const Read = () => {
                         onClick={() =>
                           setToLocalStorage(
                             eachData.id,
+                            eachData.selectedOption,
                             eachData.Warehouse_Name,
                             eachData.Warehouse_Location
                           )
