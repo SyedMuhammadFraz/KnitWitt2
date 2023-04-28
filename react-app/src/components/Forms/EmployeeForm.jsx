@@ -11,11 +11,21 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 //import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
+<<<<<<< HEAD
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+=======
+>>>>>>> main
 import { makeStyles } from '@material-ui/core/styles';
 import { useNavigate, Route, Routes } from 'react-router-dom';
 import AppLayout from '../Layout/AppLayout';
 import Blank from '../../Pages/Blank';
+<<<<<<< HEAD
+import 'dayjs/locale/de';
+=======
 
+>>>>>>> main
 
 
 function Copyright() {
@@ -55,7 +65,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+<<<<<<< HEAD
+export default function EmployeeForm() {
+=======
 export default function SignInSide() {
+>>>>>>> main
   const classes = useStyles();
   const navigate=useNavigate();
 
@@ -115,6 +129,14 @@ export default function SignInSide() {
               id="CNIC"
               autoComplete="CNIC"
             />
+<<<<<<< HEAD
+            
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DatePicker disableFuture ></DatePicker>
+            </LocalizationProvider>
+        
+          
+=======
             <TextField
               variant="outlined"
               margin="normal"
@@ -126,6 +148,7 @@ export default function SignInSide() {
               id="dateofbirth"
               autoComplete="dateofbirth"
             />
+>>>>>>> main
             <TextField
               variant="outlined"
               margin="normal"
@@ -140,11 +163,26 @@ export default function SignInSide() {
             
             <Button
               type="submit"
+<<<<<<< HEAD
+              width="50px"
+=======
               width="30px"
+>>>>>>> main
               variant="contained"
               color="primary"
               className={classes.submit}
               onClick={NavigateToHome}
+<<<<<<< HEAD
+              
+            >
+              Add Employee
+            </Button>
+            
+            <Button
+              display="flex"
+              type="submit"
+              width="20"
+=======
               margin="10px"
             >
               Add Employee
@@ -152,10 +190,15 @@ export default function SignInSide() {
             <Button
               type="submit"
               width="30px"
+>>>>>>> main
               variant="contained"
               color="primary"
               className={classes.submit}
               onClick={NavigateToHome}
+<<<<<<< HEAD
+              
+=======
+>>>>>>> main
             >
               Add Employee
             </Button>

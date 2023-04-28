@@ -40,10 +40,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+<<<<<<< HEAD
+=======
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.15, )"
             },
+>>>>>>> main
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.15, )"

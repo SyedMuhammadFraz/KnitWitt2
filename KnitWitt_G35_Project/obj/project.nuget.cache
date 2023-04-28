@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "f5KAbcG4kOGmNfBqpQ/1UIJOG6YqyvaGSme5Ck40PKsEyoZTVxDGycGAq3ZU7WKJoml/dqGmJqdeCFV5lMyRgg==",
+=======
   "dgSpecHash": "HaqjrWyuOsSEaB4bRchBWJQiIGxD3z2fBiQSmf1A6c+sR+vEvcTOPeNXa3q0vlIegfvBjV6joYwfIzjqrAKPGQ==",
+>>>>>>> main
   "success": true,
   "projectFilePath": "C:\\Users\\Syed Fraz\\OneDrive\\Documents\\4th semester\\DBMS\\Final Project\\GitLab Final Project\\KnitWitt_G35_Project\\KnitWitt_G35_Project.csproj",
   "expectedPackageFiles": [
