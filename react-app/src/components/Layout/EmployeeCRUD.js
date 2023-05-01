@@ -120,22 +120,22 @@ const Employee_CRUD=()=>{
             <input type="text" className="form-control" placeholder="Enter First Name " value={First_Name} onChange={(e)=> setFirstName(e.target.value)}/>
         </Col>
         <Col xs={6}>
-            <input type="text" className="form-control" placeholder="Enter Last Name " value={Last_Name} onChange={(e)=> setFirstName(e.target.value)}/>
+            <input type="text" className="form-control" placeholder="Enter Last Name " value={Last_Name} onChange={(e)=> setLastName(e.target.value)}/>
         </Col>
     </Row>
         <br></br>
     <Row>
         <Col xs={6}>
-            <input type="text" className="form-control" placeholder="Enter Email Address " value={Email}/>
+            <input type="text" className="form-control" placeholder="Enter Email Address " value={Email} onChange={(e)=> setEmail(e.target.value)}/>
         </Col>
         <Col xs={6}>
-            <input type="text" className="form-control" placeholder="Enter Contact " value={Contact}/>
+            <input type="text" className="form-control" placeholder="Enter Contact " value={Contact} onChange={(e)=> setContact(e.target.value)}/>
         </Col>
     </Row>    
         <br></br>
     <Row>
         <Col xs={6}>
-            <input type="date" className="form-control" placeholder="Enter DOB " value={DOB}/>
+            <input type="date" className="form-control" placeholder="Enter DOB " value={DOB} onChange={(e)=> set(e.target.value)}/>
         </Col>
         <br></br>
         <Col md='auto'>
