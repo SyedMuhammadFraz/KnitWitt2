@@ -135,15 +135,15 @@ const Employee_CRUD=()=>{
         <br></br>
     <Row>
         <Col xs={6}>
-            <input type="date" className="form-control" placeholder="Enter DOB " value={DOB} onChange={(e)=> set(e.target.value)}/>
+            <input type="date" className="form-control" placeholder="Enter DOB " value={DOB} onChange={(e)=> setDOB(e.target.value)}/>
         </Col>
         <br></br>
         <Col md='auto'>
-            <input type="radio" value={Gender === 1 ? true : false}/>
+            <input type="radio" value={Gender === 1 ? true : false} onChange={(e)=> setGender(e.target.value)}/>
             <label>Male</label>
         </Col>
         <Col>
-            <input type="radio" value={Gender === 0 ? true : false}/>
+            <input type="radio" value={Gender === 0 ? true : false} onChange={(e)=> setGender(e.target.value)}/>
             <label>Female</label>
         </Col>
     </Row>
