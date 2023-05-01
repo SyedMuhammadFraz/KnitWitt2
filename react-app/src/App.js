@@ -9,25 +9,17 @@ import AppLayout from './components/Layout/AppLayout';
 import Blank from './Pages/Blank';
 import 'boxicons/css/boxicons.min.css';
 import SignInSide from './components/SignIn';
-<<<<<<< HEAD
 import SignUp from './components/SignUp';
 import EmployeeForm from './components/Forms/EmployeeForm';
-=======
->>>>>>> main
 
 function App() {
   return (
       <BrowserRouter>
           <Routes>
                 <Route path='/' element={<SignInSide />} />
-<<<<<<< HEAD
                 <Route path='/SignUp' element={<SignUp/>}/>
                 <Route path='/AppLayout' element={<AppLayout />}>
                     <Route path='/AppLayout/employees' element={<AppLayout />} />
-=======
-                <Route path='/AppLayout' element={<AppLayout />}>
-                    <Route path='/AppLayout/employees' element={<Blank />} />
->>>>>>> main
                     <Route path='/AppLayout/orders' element={<Blank />} />
                     <Route path='/AppLayout/employeeRoles' element={<Blank />} />
                     <Route path='/AppLayout/warehouse' element={<Blank />} />
@@ -37,10 +29,7 @@ function App() {
                     <Route path='/AppLayout/product' element={<Blank />} />
                     <Route path='/AppLayout/empRoles' element={<Blank />} />
                 </Route>
-<<<<<<< HEAD
                
-=======
->>>>>>> main
           </Routes> 
       </BrowserRouter>
   );

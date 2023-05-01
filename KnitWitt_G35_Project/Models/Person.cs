@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 
 namespace KnitWitt_G35_Project.Models
@@ -8,7 +7,7 @@ namespace KnitWitt_G35_Project.Models
     {
         public int Person_Id { get; set; }
     }
-    public class Person
+    public record Person
     {
         [Key]
         public int Person_Id { get; set; }
@@ -19,11 +18,5 @@ namespace KnitWitt_G35_Project.Models
         public string? Contact { get; set; }
         public DateTime DOB { get; set; }
         public string? CNIC { get; set; }
-=======
-﻿namespace KnitWitt_G35_Project.Models
-{
-    public class Person
-    {
->>>>>>> main
     }
 }

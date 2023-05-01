@@ -1,32 +1,25 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "../sidebar/SSidebar";
-<<<<<<< HEAD
 import EmployeeForm from "../Forms/EmployeeForm";
 import Blank from "../../Pages/Blank";
+import Employee_CRUD from "./EmployeeCRUD";
+
 //import { EmpForm } from "./FormLayout";
 
 var method;
 const href=window.location.href;
 if(href==="http://localhost:3000/AppLayout/employees"){
-    method = <EmployeeForm/>;
+    method = <Employee_CRUD/>;
 }
 else {
     method=<Blank/>;
 }
-=======
-import SignInSide from "../Forms/EmployeeForm";
-
->>>>>>> main
 const AppLayout = () => {
     return <div style={{
         padding: '50px 0px 0px 370px'
     }}>
         <Sidebar />
-<<<<<<< HEAD
-        <EmployeeForm/>
-=======
-        <SignInSide />
->>>>>>> main
+        <Employee_CRUD/>
     </div>;
 };
 

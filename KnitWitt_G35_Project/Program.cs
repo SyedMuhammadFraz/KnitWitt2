@@ -1,10 +1,11 @@
-<<<<<<< HEAD
+
 using KnitWitt_G35_Project.Controllers;
 using KnitWitt_G35_Project.Models;
+using KnitWitt_G35_Project.Models.CRUDS;
+using KnitWitt_G35_Project.Services;
 using Microsoft.EntityFrameworkCore;
 
-=======
->>>>>>> main
+
 namespace KnitWitt_G35_Project
 {
     public class Program
@@ -14,21 +15,30 @@ namespace KnitWitt_G35_Project
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-<<<<<<< HEAD
+
             builder.Services.AddDbContext<PersonContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("CRUDCS")));
 
-=======
->>>>>>> main
+            builder.Services.AddDbContext<Raw_Material_Context>(options =>
+           options.UseSqlServer(builder.Configuration.GetConnectionString("CRUDCS")));
+
+            builder.Services.AddDbContext<Courier_Service_Context>(options =>
+           options.UseSqlServer(builder.Configuration.GetConnectionString("CRUDCS")));
+
+            builder.Services.AddDbContext<Customer_Company_Context>(options =>
+           options.UseSqlServer(builder.Configuration.GetConnectionString("CRUDCS")));
+
+            builder.Services.AddDbContext<DepartmentContext>(options =>
+           options.UseSqlServer(builder.Configuration.GetConnectionString("CRUDCS")));
+
+            builder.Services.AddScoped<Emp_Interface, Employee_CRUD>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-<<<<<<< HEAD
             builder.Services.AddCors();
-=======
->>>>>>> main
+
 
             var app = builder.Build();
 
@@ -39,7 +49,6 @@ namespace KnitWitt_G35_Project
                 app.UseSwaggerUI();
             }
 
-<<<<<<< HEAD
             
             app.UseCors(builder =>
             {
@@ -49,8 +58,6 @@ namespace KnitWitt_G35_Project
                 .AllowAnyHeader();
             });
 
-=======
->>>>>>> main
             app.UseAuthorization();
 
 
