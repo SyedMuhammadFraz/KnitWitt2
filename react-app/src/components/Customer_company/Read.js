@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Select from 'react-select';
-import DatePicker from "react-datepicker";
+//import Select from 'react-select';
+//import DatePicker from "react-datepicker";
+import 'bootstrap-5.0.2-dist/css/bootstrap.min.css';
 
 
 const Read = () => {

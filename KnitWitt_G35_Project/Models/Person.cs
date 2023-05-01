@@ -14,9 +14,9 @@ namespace KnitWitt_G35_Project.Models
         public string? First_Name { get; set; }
         public string? Last_Name { get; set; }
         public string? Email { get; set; }
-        public bool Gender { get; set; }
         public string? Contact { get; set; }
         public DateTime DOB { get; set; }
+        public bool Gender { get; set; }
         public string? CNIC { get; set; }
     }
 }

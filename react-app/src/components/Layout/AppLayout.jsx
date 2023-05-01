@@ -3,6 +3,7 @@ import Sidebar from "../sidebar/SSidebar";
 import EmployeeForm from "../Forms/EmployeeForm";
 import Blank from "../../Pages/Blank";
 import Employee_CRUD from "./EmployeeCRUD";
+import Read from "../Customer_company/Read";
 
 //import { EmpForm } from "./FormLayout";
 
